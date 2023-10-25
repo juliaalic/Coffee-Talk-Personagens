@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-men Seleção</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css"> 
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+ <!-- index: quando coloca no servidor, ele procura o primeiro arquivo e carrega o index por padrão -->
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/imagens/logo-coffee_talk.png" alt="Logo x-men">
+    </header>
+
+    <main class="selecao-de-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Selecione um personagem </h1>
+            <ul class="lista-de-personagens">
+                <li class="personagem selecionado" id="freya" data-name="Freya" data-description="Jornalista e escritor de contos. Você pode ler meus contos surreais e estranhos no The Evening Whispers. Idolize e aspire ser alguém como Geil Naiman ou Maruki Harukami.">
+                    <img src="./src/imagens/card-freya.jpg" alt="personagem Freya">
+                </li>
+
+                <li class="personagem" id="jorji" data-name="Jorji" data-description="Nascido e criado em Seattle. Um policial intolerante à lactose. Pai de três lindas garotas.">
+                    <img src="./src/imagens/card-jorji.jpg" alt="personagem Jorji">
+                </li>
+
+                <li class="personagem" id="lua" data-name="Lua" data-description="Votre âme est paysage choisi">
+                    <img src="./src/imagens/card-lua.jpg" alt="personagem Lua">
+                </li>
+
+                <li class="personagem" id="baile" data-name="Bailey's" data-description="Designer Freelancer, frequentador de museus e galerias, graduado em artes. Desenho e faço design por comida e abrigo.">
+                    <img src="./src/imagens/card-baile.jpg" alt="personagem Bailey">
+                </li>
+
+                <li class="personagem" id="hyde" data-name="Hyde" data-description="Parte da agência dos Anjos Perdidos. Sou velho nessa Terra, mas ainda busco a verdade e o propósito da vida.">
+                    <img src="./src/imagens/card-hyde.jpg" alt="personagem Hyde">
+                </li>
+
+                <li class="personagem" id="gala" data-name="Gala" data-description="Veterano, trabalhando no hospital.">
+                    <img src="./src/imagens/card-gala.jpg" alt="personagem Gala">
+                </li>
+
+                <li class="personagem" id="rachel" data-name="Rachel" data-description="Cantora, dançarina, modelo e sua garota preferida!" >
+                    <img src="./src/imagens/card-rachel.jpg" alt="personagem Rachel">
+                </li>
+                <li class="personagem" id="neil" data-name="Neil" data-description="Por favor, escreva seu perfil aqui">
+                    <img src="./src/imagens/card-neil.jpg" alt="personagem Neil">
+                </li>
+            </ul>
+        </section>
+        <section class="personagem-selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-freya.png" alt="Personagem Selecionado">
+
+            <div class="informacoes-personagem">
+                <h2 class="nome-personagem" id="nome-personagem">Freya</h2>
+                <p class="descricao-personagem" id="descricao-personagem">Jornalista e escritor de contos. Você pode ler meus contos surreais e estranhos no The Evening Whispers. Idolize e aspire ser alguém como Geil Naiman ou Maruki Harukami.</p>
+            </div>
+            <!-- div: tag que não tem significado, serve para agrupar elementos (estilizar elementos) -->
+        </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
